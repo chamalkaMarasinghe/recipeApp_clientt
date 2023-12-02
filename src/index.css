@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+}
+
+body {
+  background-color: #e3e1e1;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* login page and register page styles  -------------------------------------------------------------------*/
+
+#loginpage-wrapper, #register-page-wrapper{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#content-card{
+  background-color: white;
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px grey;
+}
+
+#content-card > #row-1{
+  /* background-color: red; */
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#content-card > #row-2{
+  /* background-color: green; */
+  padding-left: 15%;
+}
+
+#content-card > #row-3{
+  /* background-color: blue; */
+  text-align: center;
+}
+
+.form {
+  width: 70%;
+  padding: 16px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 11px;
+  outline:none;
+  border-radius: 10px;
+  border: 1px solid grey;
+  transition: all 0.5s;
+}
+
+#button {
+  width: 81%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight:bold;
+  outline:none;
+  background-color: #f2417c;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.8);
+  transition: all 0.5s;
+}
+
+#button:hover {
+  background-color: #9c1642;
+  cursor: pointer;
+}
+
+#loggin-err, #register-err{
+  padding-bottom: 5%;
+  color: #9c1642;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.clickable-text{
+  color: #f2417c;
+  cursor: pointer;
+}
+
+#password-status{
+  font-size: 10px;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  color: #9c1642;
+}
+
+/* header styles  ------------------------------------------------------------------------*/
+
+#header-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+#header-wrapper > #header{
+  display: flex;
+  width: 90%;
+}
+
+
+#header-wrapper > #header > .col{
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#header-wrapper > #header > #col-1{
+  margin-right: 2%;
+}
+
+.header-navs:hover, #logout:hover{
+  cursor: pointer;
+}
+
+/* recipe card styles  -------------------------------------------------------------------*/
+
+#recipe-card{
+  width: 98%;
+  padding: 1%;
+  /* background-color: lightsalmon; */
+}
+
+#recipe-card > #image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b8b4b5;
+  height: 120px;;
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+
+#recipe-card > #desc > #category{
+  color: gray;
+}
+
+#recipe-card > #desc > #category > i{
+  color: red;
+  cursor: pointer;
+}
+
+#recipe-card > #desc > #name{
+  font-weight: bold;
+}
+
+/* home page styling ------------------------------------------------------------------------*/
+
+#category-pallate, #recipe-pallate{
+  width: 90%;
+  margin-left: 5%;
+}
+
+#category-pallate{
+  margin-top: 1.5%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.category-btns{
+  outline: none;
+  border: none;
+  color: #f2417c;
+  padding: 8px 16px;
+  width: 20%;
+  border: 1px solid #f2417c;
+  border-radius: 5px;
+  margin-right: 3%;
+  transition: background-color;
+  transition-duration: 0.4s;
+}
+
+.category-btns:hover{
+  background-color:#f2417c;
+  color: white;
+  cursor: pointer;
+}
+
+.highlighted{
+  background-color: #f2417c;
+  color: white;
+}
+
+#category-pallate::-webkit-scrollbar {
+  width: 0px; 
+}
+
+#recipe-pallate > .row{
+  display: flex;
+  margin-bottom: 3%;
+}
+
+#recipe-pallate > .row > .col{
+  width: 18%;
+}
+
+#recipe-pallate > .row > .col:not(:last-child){
+  margin-right: 2.5%;
+}
