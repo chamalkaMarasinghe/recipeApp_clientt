@@ -1,5 +1,4 @@
-// import { BrowserRouter } from "react-router-dom";
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import PathRouter from "./PathRouter";
 import { Provider } from 'react-redux';
 import { Store } from "./redux/store";
@@ -11,9 +10,9 @@ function App() {
     <Provider store={Store}>
       <PersistGate loading={null} persistor={persistStore(Store)}>
         <div className="App">
-          <Router>      
+          <BrowserRouter>      
             <PathRouter />
-          </Router>
+          </BrowserRouter>
         </div>
       </PersistGate>
     </Provider>

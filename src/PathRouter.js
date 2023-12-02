@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-// import { Route, Routes } from "react-router-dom";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import Home from "./scenes/HomePage/Home";
 import FavorituesPage from "./scenes/FavorituesPage/FavorituesPage";
 import Login from "./scenes/LoginPage/Login";
