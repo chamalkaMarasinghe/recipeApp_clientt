@@ -12,7 +12,7 @@ export default function Router(){
 
     return(
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/recipeApp_clientt" element={<Home />} />
             <Route path="/fav" element={user ? <FavorituesPage /> : <Login />} />
             <Route path="/login" element={user ? <Home /> : <Login />} />
             <Route path="/register" element={user ? <Home /> : <Register />} />
