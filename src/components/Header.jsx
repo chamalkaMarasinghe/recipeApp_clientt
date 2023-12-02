@@ -13,7 +13,7 @@ function Header(props) {
             <div id='header'>
                 <div className='col' id='col-1'>
                     <p>COOK</p>
-                    <p className='header-navs' onClick={() => navigate('/')}>Home</p>
+                    <p className='header-navs' onClick={() => navigate('/recipeApp_clientt')}>Home</p>
                 </div>
                 <div className='col'>
                     <p className='header-navs' onClick={() => navigate('/fav')}>Favourite</p>

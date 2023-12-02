@@ -25,7 +25,7 @@ function Login(props) {
                     if(data.status == 'Signed-in Successfully'){
                         // dispatch(setUser(data.user));
                         dispatch(setUser({"user" : data.user, "token" : data.token}));
-                        navigate('/');
+                        navigate('/recipeApp_clientt');
                     }
                 });
             }
